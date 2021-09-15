@@ -4,9 +4,14 @@ public class TryJava17 {
 
 	public static void main(String[] args) {
 		PatternMatchingSwitchEx1("bar");
+		System.out.println("Try Pattern Matching Switch Ex2");
 		PatternMatchingSwitchEx2("longstring");
 		PatternMatchingSwitchEx2("str");
 		PatternMatchingSwitchEx2(new Object());
+		System.out.println("Try Pattern Matching Switch Ex3");
+		PatternMatchingSwitchEx3("longstring");
+		PatternMatchingSwitchEx3("str");
+		PatternMatchingSwitchEx3(new Object());
 	}
 
 	private static void PatternMatchingSwitchEx1(Object o) {
@@ -27,5 +32,28 @@ public class TryJava17 {
 	     default : System.out.println("Object: " + o);
 	   }
 	}
+	
+	private static void PatternMatchingSwitchEx3(Object o) {
+		switch (o) {
+	     case Integer I: 
+	       System.out.println("Integer"); 
+	       System.out.println(I); 
+	       break; 
+	     case String s && s.length() > 5: 
+	       System.out.println("String s && s.length()>5"); 
+	       System.out.println(s); 
+	       break;
+	     case String s: 
+	       System.out.println("String"); 
+	       System.out.println(s);
+	       break; 
+	     case TryJava17 t:
+	       System.out.println("X"); 
+	       System.out.println(t);
+	       break;
+	     default : System.out.println("Object"); 
+	   }
+	}
+		
 
 }
