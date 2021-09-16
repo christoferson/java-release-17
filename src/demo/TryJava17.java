@@ -15,6 +15,9 @@ public class TryJava17 {
 		System.out.println("Try Pattern Matching Switch Ex4");
 		PatternMatchingSwitchEx4(Integer.valueOf(12));
 		PatternMatchingSwitchEx4(Integer.valueOf(7));
+		
+		System.out.println("Try Pattern Matching Switch Ex5");
+		try { PatternMatchingSwitchEx5("str"); } catch (Exception e) { System.out.println("Got Exception!"); } 
 	}
 
 	private static void PatternMatchingSwitchEx1(Object o) {
@@ -71,4 +74,12 @@ public class TryJava17 {
 	   }
 	}
 	
+	private static void PatternMatchingSwitchEx5(Object o) throws Exception {
+		switch (o) {
+		case String s1:
+			throw new Exception(s1);
+		default:
+			break;
+		}
+	}
 }
