@@ -3,6 +3,7 @@ package demo;
 public class TryJava17 {
 
 	public static void main(String[] args) {
+		System.out.println("Try Pattern Matching Switch Ex1");
 		PatternMatchingSwitchEx1("bar");
 		System.out.println("Try Pattern Matching Switch Ex2");
 		PatternMatchingSwitchEx2("longstring");
@@ -21,11 +22,10 @@ public class TryJava17 {
 	}
 
 	private static void PatternMatchingSwitchEx1(Object o) {
-		System.out.println("Try Pattern Matching Switch Ex1");
 		switch (o) {
-			case Integer i -> System.out.println("Received Integer!");
-			case String s  -> System.out.println("Received String!");
-			default		   -> System.out.println("Received Object!");
+			case Integer i -> System.out.println("Received Integer! " + i);
+			case String s  -> System.out.println("Received String! " + s);
+			default		   -> System.out.println("Received Object! " + o);
 		}
 	}
 	
