@@ -91,4 +91,12 @@ public class TryJava17 {
 			System.out.println("Default");
 		}
 	}
+	
+	// var is not allowed here
+//	private static void PatternMatchingSwitchEx7(Object o) {
+//		switch (o.hashCode()) {
+//	     case var s : System.out.println("Error should be ANY_PATTERN");
+//	     default : System.out.println("Object");
+//	   }
+//	}
 }
