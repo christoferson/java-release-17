@@ -19,6 +19,8 @@ public class TryJava17 {
 		
 		System.out.println("Try Pattern Matching Switch Ex5");
 		try { PatternMatchingSwitchEx5("str"); } catch (Exception e) { System.out.println("Got Exception!"); } 
+		System.out.println("Try Pattern Matching Switch Ex6");
+		PatternMatchingSwitchEx6("str");
 	}
 
 	private static void PatternMatchingSwitchEx1(Object o) {
@@ -80,6 +82,13 @@ public class TryJava17 {
 			throw new Exception(s1);
 		default:
 			break;
+		}
+	}
+	
+	private static void PatternMatchingSwitchEx6(Object o) {
+		switch (o.hashCode()) {
+		case default:
+			System.out.println("Default");
 		}
 	}
 }
