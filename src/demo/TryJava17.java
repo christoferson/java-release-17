@@ -99,4 +99,16 @@ public class TryJava17 {
 //	     default : System.out.println("Object");
 //	   }
 //	}
+	
+	// Type mismatch: cannot convert from int to Object
+//	private static void PatternMatchingSwitchEx8NG(Object o) {
+//		switch (o) {
+//		case 1: // Type mismatch: cannot convert from int to Object
+//			System.out.println("Integer");
+//			break;
+//		default:
+//			System.out.println("Object");
+//		}
+//	}
+	
 }
