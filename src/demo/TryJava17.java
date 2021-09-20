@@ -111,4 +111,22 @@ public class TryJava17 {
 //		}
 //	}
 	
+	//Illegal fall-through to a pattern
+//	private static void PatternMatchingSwitchEx9NG(Object o) {
+//	   switch (o) {
+//	     case Integer I: 
+//	       System.out.println("Integer"); 
+//	       System.out.println(I); 
+//	     case String s && s.length()>1: //Illegal fall-through to a pattern
+//	       System.out.println("String s && s.length()>1"); 
+//	       System.out.println(s); 
+//	       break;
+//	     case TryJava17 x:
+//	       System.out.println("TryJava17"); 
+//	       System.out.println(x);
+//	       break;
+//	     default : System.out.println("Object"); 
+//	   }
+//	}
+	
 }
