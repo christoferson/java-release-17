@@ -21,6 +21,9 @@ public class TryJava17 {
 		try { PatternMatchingSwitchEx5("str"); } catch (Exception e) { System.out.println("Got Exception!"); } 
 		System.out.println("Try Pattern Matching Switch Ex6");
 		PatternMatchingSwitchEx6("str");
+		
+		System.out.println("Try Pattern Matching Switch Ex11");
+		PatternMatchingSwitchEx11("str8237");
 	}
 
 	private static void PatternMatchingSwitchEx1(Object o) {
@@ -154,5 +157,16 @@ public class TryJava17 {
 //				break;
 //		}
 //	}
+	
+	public static void PatternMatchingSwitchEx11(Object o) {
+		final int len = 2;
+		switch (o) {
+			case String o1 && o1.length() > len:
+				System.out.println("Len: " + len);
+			break;
+			default:
+				break;
+		}
+	}
 	
 }
