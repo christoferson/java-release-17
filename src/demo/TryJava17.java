@@ -129,4 +129,18 @@ public class TryJava17 {
 //	   }
 //	}
 	
+	// cannot convert from null to int
+//	private static void PatternMatchingSwitchEx10NG(int o) {
+//	   switch (o) {
+//	     case 10: 
+//	       System.out.println("Integer"); 
+//	       System.out.println(o); 
+//	       break; 
+//	     case null: // Type mismatch: cannot convert from null to int
+//	       System.out.println("NULL"); 
+//	       break;
+//	     default : System.out.println(o); 
+//	   }
+//	}
+	
 }
