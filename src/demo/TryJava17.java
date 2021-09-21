@@ -143,4 +143,16 @@ public class TryJava17 {
 //	   }
 //	}
 	
+	// Local variable len referenced from a guard must be final or effectively final
+//	public static void PatternMatchingSwitchEx11NG(Object o) {
+//		int len = 2;
+//		switch (o) {
+//			case String o1 && o1.length() > len: // Local variable len referenced from a guard must be final or effectively final
+//				len = 0;
+//			break;
+//			default:
+//				break;
+//		}
+//	}
+	
 }
