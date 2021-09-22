@@ -169,4 +169,12 @@ public class TryJava17 {
 		}
 	}
 	
+	// Type mismatch: cannot convert from null to int
+//	private static void PatternMatchingSwitchEx12NG(int o) {
+//		switch (o) {
+//			case 20 -> System.out.println("20");
+//			case null -> System.out.println("null"); // Type mismatch: cannot convert from null to int
+//		}
+//	}
+	
 }
