@@ -177,4 +177,11 @@ public class TryJava17 {
 //		}
 //	}
 	
+	// This case label is dominated by one of the preceding case label
+//	private static void PatternMatchingSwitchEx13NG(Integer o) {
+//	   switch (o) {
+//	     case  Integer i, 30  -> System.out.println(o); // This case label is dominated by one of the preceding case label
+//	   }
+//	}
+	
 }
