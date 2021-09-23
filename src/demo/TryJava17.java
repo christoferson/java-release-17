@@ -184,4 +184,22 @@ public class TryJava17 {
 //	   }
 //	}
 	
+//	public static void PatternMatchingSwitchEx14NG(Number n) {
+//		int j = 
+//		switch (n) {
+//			case Integer i -> {
+//			} // A switch labeled block in a switch expression should not complete normally
+//			default -> {
+//				yield 1;
+//			}
+//		};
+//	}
+	
+	//// A switch label may not have both a pattern case label element and a default case label //  'var' is not allowed here
+//	private static void PatternMatchingSwitchEx15NG(Integer o) {
+//		switch (o) {
+//	  		case  default, var k  -> System.out.println(0); // A switch label may not have both a pattern case label element and a default case label element
+//		}
+//	}
+	
 }
