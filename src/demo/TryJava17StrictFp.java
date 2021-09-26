@@ -32,6 +32,11 @@ public class TryJava17StrictFp {
 			System.out.println(dec);			
 		}
 	}
+	
+	// Illegal modifier for the field f; only public, protected, private, static, final, transient & volatile are permitted
+	static class StrictFpEx5NG {
+		strictfp float f; // Illegal modifier for the field f; only public, protected, private, static, final, transient & volatile are permitted
+	}
 
 
 }
