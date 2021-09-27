@@ -46,5 +46,10 @@ public class TryJava17StrictFp {
 //	 
 //		};
 //	}
+	
+	// strictfp is not permitted for abstract interface method foo
+//	interface StrictFpEx7NG {
+//		strictfp void foo(); // strictfp is not permitted for abstract interface method foo
+//	}
 
 }
