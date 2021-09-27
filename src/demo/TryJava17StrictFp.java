@@ -34,9 +34,17 @@ public class TryJava17StrictFp {
 	}
 	
 	// Illegal modifier for the field f; only public, protected, private, static, final, transient & volatile are permitted
-	static class StrictFpEx5NG {
-		strictfp float f; // Illegal modifier for the field f; only public, protected, private, static, final, transient & volatile are permitted
-	}
+	// Floating-point expressions are always strictly evaluated from source level 17. Keyword 'strictfp' is not required.
+//	static class StrictFpEx5NG {
+//		private strictfp float f; // Illegal modifier for the field f; only public, protected, private, static, final, transient & volatile are permitted
+//	}
 
+	// Illegal modifier for the constructor in type StrictFpEx6NG; only public, protected & private are permitted
+	// Floating-point expressions are always strictly evaluated from source level 17. Keyword 'strictfp' is not required.
+//	static class StrictFpEx6NG {
+//		public strictfp StrictFpEx6NG() { // Illegal modifier for the constructor in type StrictFpEx6NG; only public, protected & private are permitted  
+//	 
+//		};
+//	}
 
 }
