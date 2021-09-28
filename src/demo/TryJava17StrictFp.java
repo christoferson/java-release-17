@@ -51,5 +51,12 @@ public class TryJava17StrictFp {
 //	interface StrictFpEx7NG {
 //		strictfp void foo(); // strictfp is not permitted for abstract interface method foo
 //	}
+	
+	// Floating-point expressions are always strictly evaluated from source level 17. Keyword 'strictfp' is not required.
+	// The abstract method test in type StrictFpEx8NG can only set a visibility modifier, one of public or protected
+//	abstract class StrictFpEx8NG {
+//		public abstract strictfp void test(); // The abstract method test in type StrictFpEx8NG can only set a visibility modifier, one of public or protected
+//	}
+
 
 }
