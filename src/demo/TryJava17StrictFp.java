@@ -58,5 +58,4 @@ public class TryJava17StrictFp {
 //		public abstract strictfp void test(); // The abstract method test in type StrictFpEx8NG can only set a visibility modifier, one of public or protected
 //	}
 
-
 }
