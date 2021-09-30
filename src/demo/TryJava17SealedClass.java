@@ -27,6 +27,14 @@ public class TryJava17SealedClass {
 	 
 	non-sealed interface SealedClassEx2I2 extends SealedClassEx2I {
 	}
+	
+	// Ex 3
+	
+	sealed class SealedClassEx3X permits SealedClassEx3Y {
+	}
+	 
+	non-sealed class SealedClassEx3Y extends SealedClassEx3X {
+	}
 
 	// Ex3
 
