@@ -36,6 +36,12 @@ public class TryJava17SealedClass {
 	non-sealed class SealedClassEx3Y extends SealedClassEx3X {
 	}
 
-	// Ex3
+	// Ex4
+	
+	sealed public class SealedClassEx4X<T> {
+	}
+	 
+	non-sealed class SealedClassEx4Y extends SealedClassEx4X<Integer> {
+	}
 
 }
