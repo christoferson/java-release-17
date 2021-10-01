@@ -43,5 +43,13 @@ public class TryJava17SealedClass {
 	 
 	non-sealed class SealedClassEx4Y extends SealedClassEx4X<Integer> {
 	}
+	
+	// Ex5
+	
+	// - Duplicate modifier for the type SealedClassEx5NG
+	// - Sealed class or interface lacks the permits clause and no class or interface from the same compilation unit declares SealedClassEx5NG as its direct superclass or superinterface
+//	sealed public sealed class SealedClassEx5NG {
+//	}
+	
 
 }
